@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/_8sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_3sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- State UI - -->
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imagePoster"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="H, 2:1.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="@dimen/_8sdp"
+            tools:src="@drawable/viger_poster_01"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <!-- State UI - -->
+        <TextView
+            android:id="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@id/imagePoster"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/primary_label"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Boruto The Movie : Otsutsuki Version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!-- State UI - -->
+        <TextView
+            android:id="@+id/textCategory"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintTop_toBottomOf="@id/textName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Fighting, Drama, Action"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/secondary_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!-- State UI - -->
+        <TextView
+            android:id="@+id/textReleaseDate"
+            app:layout_constraintTop_toBottomOf="@id/textCategory"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/secondary_label"
+            android:text="December 20, 2018"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!-- State UI - -->
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textReleaseDate"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:isIndicator="true"
+            android:numStars="5"
+            tools:rating="4.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!-- State UI - -->
+        <androidx.appcompat.widget.AppCompatImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/viger_background_favourite"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/viger_icons_favourite"
+            android:tint="@color/white"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

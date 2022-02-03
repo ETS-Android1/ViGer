@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/viger_icons_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/menuFavorites"
+        android:icon="@drawable/viger_icons_favourite"
+        android:title="Favorites"/>
+
+    <item
+        android:id="@+id/menuSaved"
+        android:icon="@drawable/viger_icons_bookmark"
+        android:title="Saved"/>
+
+    <item
+        android:id="@+id/menuProfile"
+        android:icon="@drawable/viger_icons_person"
+        android:title="Profile"/>
+
+</menu>
