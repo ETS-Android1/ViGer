@@ -12,9 +12,9 @@ Best regards, [@aqshalrzq](https://github.com/aqshalrzq)
 
 The application or project this time I named ViGer. My goal for developing this Native-based mobile application is to improve my understanding of how to develop and create a program with Android Studio.
 
-### CompDash - Technology
+### ViGer - Technology
 
-For the technology from the MovApps project, I developed it with several components, namely:
+For the technology from the ViGer project, I developed it with several components, namely:
 
 - Android Studio Bumblebee | 2021.1.1
 - Java SDK v. 8
